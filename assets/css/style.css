@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
+
+/* ------------- Color ------------- */
+
+body {
+    background-color: #232323;
+    color: #FFFACA;
+    margin: 0;
+    width: 100%;
+}
+
+
+/* ------------- General ------------- */
+
+a {
+    text-decoration: none;
+}
+
+/* ------------- Game ------------- */
+
+.game-name {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 8vh;
+    margin-bottom: 10px;
+}
+
+.outer-container {
+    border: solid #FFFACA 2px;
+    border-radius: 10px;
+    padding: 5px;
+
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .outer-container {
+        border: solid #FFFACA 2px;
+        border-radius: 10px;
+        padding: 5px;
+
+        position: relative;
+        margin: auto;
+        text-align: center;
+        width: 80vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .outer-container {
+        border: solid #FFFACA 2px;
+        border-radius: 10px;
+        padding: 5px;
+
+        position: relative;
+        margin: auto;
+        text-align: center;
+        width: 70vw;
+    }
+}
+
+.controller-field {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+/*    height: 25vh; */
+    display: inline-block;
+}
+
+.rules-btn > .btn {
+    background-color: #FFFACA;
+    color: #232323;
+    font-weight: 500;
+    padding: 5px 12px;
+    width: 100%;
+}
+
+.controller-options {
+    display: inline-table;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #FFFACA;
+    color: #232323;
+    font-weight: 500;
+    padding: 5px 12px;
+    width: 50%;
+    border: solid #232323 1px;
+}
+
+.counter-clock {
+    width: 100%;
+    background-color: #FFFACA;
+    text-align: center;
+    color: #232323;
+    border: solid #232323 1px;
+    border-radius: 4px;
+    padding: 3px 12px;
+}
+
+.hash-div {
+    height: 25px;
+    background-color: #FFFACA;
+    display: inline-block;
+    transform: translateY(-3px);
+    color: #232323;
+    font-weight: 500;
+}
+
+.counter-window {
+    height: 25px;
+    width: 40px;
+    background-color: #232323;
+    display: inline-block;
+    transform: translateY(3px);
+}
+
+.game-fields {
+    height: 45vh;
+    padding-top: 2px;
+}
+
+.game-field-1 {
+    background-color: darkgreen;
+    width: 24%;
+    display: inline-block;
+    height: 45vh;
+    position: absolute;
+    left: 1%;
+    border: solid #232323 2px;
+    border-radius: 0 10px 0 10px;
+    -moz-border-radius: 0 10px 0 10px;
+    -webkit-border-radius: 0 10px 0 10px;
+}
+
+.game-field-2 {
+    background-color: darkred;
+    width: 24%;
+    display: inline-block;
+    height: 45vh;
+    position: absolute;
+    left: 25.7%;
+    border: solid #232323 2px;
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+}
+
+.game-field-3 {
+    background-color: darkblue;
+    width: 24%;
+    display: inline-block;
+    height: 45vh;
+    position: absolute;
+    right: 25.7%;
+    border: solid #232323 2px;
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+}
+
+.game-field-4 {
+    background-color: darkgoldenrod;
+    width: 24%;
+    display: inline-block;
+    height: 45vh;
+    position: absolute;
+    right: 1%;
+    border: solid #232323 2px;
+    border-radius: 10px 0 10px 0;
+    -moz-border-radius: 10px 0 10px 0;
+    -webkit-border-radius: 10px 0 10px 0;
+}
+
+/* ------------- Modal ------------- */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #3F3F3F;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-content > h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.rules {
+    color: #FFFACA;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    text-align: justify;
+    padding-top: 5px;
+    letter-spacing: 0.8px;
+}
+
+.close-modal {
+    color: #FFFACA;
+    margin: auto;
+    font-size: 2em;
+}
+
+/* ------------- Footer ------------- */
+
+.footer  {
+    background-color: #3F3F3F;
+    color: #FFFACA;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 5vh;
+}
+
+/* ------------- Hover ------------- */
+
+.rules-btn > .btn:hover {
+    background-color: #A69C42;
+    color: #232323;
+    font-weight: 500;
+    padding: 5px 12px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #A69C42;
+    color: #232323;
+    font-weight: 500;
+    padding: 5px 12px;
+    width: 50%;
+    border: solid #232323 1px;
+}

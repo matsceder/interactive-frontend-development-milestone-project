@@ -6,9 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+	<!-- Load Boostrap -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
 	<title>Simon Game</title>
 
 	<!-- Load Jasmine Framework -->
+	<!--
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.js"
 		integrity="sha256-PePX8Jc4TIxzzVz0Qe4NsH3OUU8+Y49DBWvYgggNqkY=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.js"
@@ -16,8 +24,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/boot.js"
 		integrity="sha256-HG8TKl0T65NyELmbUoo0H7/a1e++smYdXXtuuEsyKok=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.css"
-		integrity="sha256-YzqdEMEXu1sH1t2Y9tk3XhKhxy1xMWvcA1koZx43k+8=" crossorigin="anonymous" />
-
+		integrity="sha256-YzqdEMEXu1sH1t2Y9tk3XhKhxy1xMWvcA1koZx43k+8=" crossorigin="anonymous" /> -->
 	<!-- Load Scripts -->
 	<script type="text/javascript" src="scripts/calc.js"></script>
 
@@ -26,23 +33,61 @@
 </head>
 
 <body>
-	<div class="game-name"></div>
-	<div class="outer-container">
-		<div class="top-left-field"></div>
-		<div class="top-right-field"></div>
-		<div class="bottom-left-field"></div>
-		<div class="bottom-right-field"></div>
+	<div class="game-name">Simon Memory Game</div>
+	<div class="outer-container"> 
 		<div class="controller-field">
-			<div class="controller-options"></div>
-			<div class="counter-clock"></div>
-			<div class="rules"></div>
+            <div class="rules-btn">
+			    <button type="button" class="btn">How to play?</button>
+            </div>
+            <div class="controller-options">
+                <button type="button" class="btn">ON / OFF <i class="fa fa-power-off"></i></button>
+                <button type="button" class="btn">Strict mode <i class="fa fa-square"></i>
+                <i class="fa fa-check-square d-none"></i></button>
+                <button type="button" class="btn">Play <i class="fa fa-play"></i></button>
+                <button type="button" class="btn">Sound <i class="fa fa-bell"></i>
+                <i class="fa fa-bell-slash d-none"></i></button>
+			</div>
+			<div class="counter-clock">
+                <div class="hash-div">
+                    Round <i class="fa fa-hashtag"></i>
+                </div>
+                <div class="counter-window">
+                    
+                </div>
+            </div>
 		</div>
+        <div class="game-fields">
+		<div class="game-field-1"></div>
+		<div class="game-field-2"></div>
+		<div class="game-field-3"></div>
+		<div class="game-field-4"></div>
+        </div>
+	</div>
+
+	<div class="modal">
+        <div class="modal-content">
+            <h2>
+                How to play
+            </h2>
+            <p class="rules">
+                1. Start the game by turning the game on using the ON/OFF button.<br>
+                2. Press Start to begin playing. Simon will begin by giving a signal, your job is to repeat with the same signal by pressing the right color.<br>
+                3. Simon will repeat the first signal and add one more for each round. Now repeat in the same order.<br>
+                4. You win the game by playing all 20 rounds of the game.<br>
+                5. Difficulty of the game can be set by playing in Strict mode where you only have one chance before you have to start over from the beginning.
+            </p>
+            <div class="close-modal">
+                <i class="fa fa-times-circle"></i>
+            </div>
+        </div>
 	</div>
 
 </body>
 
 <footer>
-    <div class="footer"></div>
+	<div class="footer"></div>
 </footer>
+
+<script src="assets/js/script.js" type="javascript/text"></script>
 
 </html>
