@@ -97,6 +97,22 @@ a {
     border: solid #232323 1px;
 }
 
+#strictBlank {
+    display: inline-block;
+}
+
+#strictCheck {
+    display: none;
+}
+
+.fa-bell {
+    display: inline-block;
+}
+
+.fa-bell-slash {
+    display: none;
+}
+
 .counter-clock {
     width: 100%;
     background-color: #FFFACA;
@@ -122,6 +138,7 @@ a {
     background-color: #232323;
     display: inline-block;
     transform: translateY(3px);
+    color: red;
 }
 
 .game-fields {
@@ -256,4 +273,10 @@ a {
     padding: 5px 12px;
     width: 50%;
     border: solid #232323 1px;
+    cursor: default;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  cursor: default;
 }
