@@ -22,9 +22,8 @@ window.onclick = function(event) {
   }
 }
 
-
-function strictToggle() {
-
+/* ------------- Buttons ------------- */
+function strictToggle() { 
     var sB = document.getElementById("strictBlank");
     if (sB.style.display === "none") {
         sB.style.display = "inline-block";
@@ -37,5 +36,21 @@ function strictToggle() {
         sC.style.display = "none";
     } else {
         sC.style.display = "inline-block";
+    } 
+}
+
+function soundToggle() { 
+    var sOn = document.getElementById("soundOn");
+    if (sOn.style.display === "none") {
+        sOn.style.display = "inline-block";
+    } else {
+        sOn.style.display = "none";
+    }
+
+    var sOff = document.getElementById("soundOff");
+    if (sOff.style.display === "inline-block") {
+        sOff.style.display = "none";
+    } else {
+        sOff.style.display = "inline-block";
     } 
 }
