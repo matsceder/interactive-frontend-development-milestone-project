@@ -1,13 +1,11 @@
 
 
 /* ------------- Modal ------------- */
-/* ------------- Code structure from w3schools ------------- */
-var modal = document.getElementById("rulesModal");
-
-var btnModal = document.getElementById("rulesBtn");
-
-var btnModalClose =  document.getElementById("modalBtnClose");
-
+/* ------------- Code structure from w3schools ------------- */ 
+let modal = document.getElementById("rulesModal");
+let btnModal = document.getElementById("rulesBtn");
+let btnModalClose = document.getElementById("modalBtnClose");
+ 
 btnModal.onclick = function() {
   modal.style.display = "block";
 }
@@ -21,36 +19,48 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+/* ------------- Game ------------- */
+let order = [];
+let playerOrder = [];
+let flash;
+let round;
+let score;
+let compTurn;
+let intervalId;
+let power = false;
+let win;
+let strictButton = false;
+let muteButton = false;
 
-/* ------------- Buttons ------------- */
-function strictToggle() { 
-    var sB = document.getElementById("strictBlank");
-    if (sB.style.display === "none") {
-        sB.style.display = "inline-block";
+const strictToggleBtn = document.getElementById("strictMode");
+const sB = document.getElementById("strictBlank");
+const sC = document.getElementById("strictCheck");
+const muteToggleBtn =  document.getElementById("soundOnOff");
+const sOn = document.getElementById("soundOn");
+const sOff = document.getElementById("soundOff");
+const turnCount = document.getElementById("counterWindow")
+
+strictToggleBtn.addEventListener("click", (event) => {
+    if (strictButton == false) {
+        strictButton = true;
+        sB.style.display = "none";  
+        sC.style.display = "inline-block"
     } else {
-        sB.style.display = "none";
+        strictButton = false;
+        sB.style.display = "inline-block"
+        sC.style.display = "none"
     }
+})
 
-    var sC = document.getElementById("strictCheck");
-    if (sC.style.display === "inline-block") {
-        sC.style.display = "none";
+muteToggleBtn.addEventListener("click", (event) => {
+    if (muteButton == false) {
+        muteButton = true;
+        sOn.style.display = "none";  
+        sOff.style.display = "inline-block"
     } else {
-        sC.style.display = "inline-block";
-    } 
-}
-
-function soundToggle() { 
-    var sOn = document.getElementById("soundOn");
-    if (sOn.style.display === "none") {
-        sOn.style.display = "inline-block";
-    } else {
-        sOn.style.display = "none";
+        muteButton = false;
+        sOn.style.display = "inline-block"
+        sOff.style.display = "none"
     }
+})
 
-    var sOff = document.getElementById("soundOff");
-    if (sOff.style.display === "inline-block") {
-        sOff.style.display = "none";
-    } else {
-        sOff.style.display = "inline-block";
-    } 
-}
