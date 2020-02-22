@@ -4,7 +4,7 @@
 
 body {
     background-color: #232323;
-    color: #FFFACA;
+    color: #FFDFD3;
     margin: 0;
     width: 100%;
 }
@@ -31,7 +31,7 @@ a {
 }
 
 .outer-container {
-    border: solid #FFFACA 2px;
+    border: solid #FFDFD3 2px;
     border-radius: 10px;
     padding: 5px;
 
@@ -42,7 +42,7 @@ a {
 
 @media (min-width: 576px) {
     .outer-container {
-        border: solid #FFFACA 2px;
+        border: solid #FFDFD3 2px;
         border-radius: 10px;
         padding: 5px;
 
@@ -55,7 +55,7 @@ a {
 
 @media (min-width: 768px) {
     .outer-container {
-        border: solid #FFFACA 2px;
+        border: solid #FFDFD3 2px;
         border-radius: 10px;
         padding: 5px;
 
@@ -75,7 +75,7 @@ a {
 }
 
 .rules-btn > .btn {
-    background-color: #FFFACA;
+    background-color: #FFDFD3;
     color: #232323;
     font-weight: 500;
     padding: 5px 12px;
@@ -89,7 +89,7 @@ a {
 }
 
 .btn {
-    background-color: #FFFACA;
+    background-color: #FFDFD3;
     color: #232323;
     font-weight: 500;
     padding: 5px 12px;
@@ -115,7 +115,7 @@ a {
 
 .counter-clock {
     width: 100%;
-    background-color: #FFFACA;
+    background-color: #FFDFD3;
     text-align: center;
     color: #232323;
     border: solid #232323 1px;
@@ -125,7 +125,7 @@ a {
 
 .hash-div {
     height: 25px;
-    background-color: #FFFACA;
+    background-color: #FFDFD3;
     display: inline-block;
     transform: translateY(-3px);
     color: #232323;
@@ -147,52 +147,52 @@ a {
 }
 
 .game-field-1 {
-    background-color: darkgreen;
+    background-color: #E0BBE4;
     width: 24%;
     display: inline-block;
     height: 45vh;
     position: absolute;
     left: 1%;
-    border: solid #232323 2px;
+    border: solid #232323 1px;
     border-radius: 0 10px 0 10px;
     -moz-border-radius: 0 10px 0 10px;
     -webkit-border-radius: 0 10px 0 10px;
 }
 
 .game-field-2 {
-    background-color: darkred;
+    background-color: #957DAD;
     width: 24%;
     display: inline-block;
     height: 45vh;
     position: absolute;
     left: 25.7%;
-    border: solid #232323 2px;
+    border: solid #232323 1px;
     border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
     -webkit-border-radius: 10px 10px 0 0;
 }
 
 .game-field-3 {
-    background-color: darkblue;
+    background-color: #D291BC;
     width: 24%;
     display: inline-block;
     height: 45vh;
     position: absolute;
     right: 25.7%;
-    border: solid #232323 2px;
+    border: solid #232323 1px;
     border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
     -webkit-border-radius: 10px 10px 0 0;
 }
 
 .game-field-4 {
-    background-color: darkgoldenrod;
+    background-color: #FEC8D8;
     width: 24%;
     display: inline-block;
     height: 45vh;
     position: absolute;
     right: 1%;
-    border: solid #232323 2px;
+    border: solid #232323 1px;
     border-radius: 10px 0 10px 0;
     -moz-border-radius: 10px 0 10px 0;
     -webkit-border-radius: 10px 0 10px 0;
@@ -229,7 +229,7 @@ a {
 }
 
 .rules {
-    color: #FFFACA;
+    color: #FFDFD3;
     font-family: 'Roboto', sans-serif;
     margin: auto;
     text-align: justify;
@@ -238,7 +238,7 @@ a {
 }
 
 .close-modal {
-    color: #FFFACA;
+    color: #FFDFD3;
     margin: auto;
     font-size: 2em;
 }
@@ -247,7 +247,7 @@ a {
 
 .footer  {
     background-color: #3F3F3F;
-    color: #FFFACA;
+    color: #FFDFD3;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -259,7 +259,7 @@ a {
 /* ------------- Hover ------------- */
 
 .rules-btn > .btn:hover {
-    background-color: #A69C42;
+    background-color: #BFADA7;
     color: #232323;
     font-weight: 500;
     padding: 5px 12px;
@@ -267,7 +267,7 @@ a {
 }
 
 .btn:hover {
-    background-color: #A69C42;
+    background-color: #BFADA7;
     color: #232323;
     font-weight: 500;
     padding: 5px 12px;
