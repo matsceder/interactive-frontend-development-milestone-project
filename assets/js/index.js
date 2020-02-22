@@ -38,7 +38,14 @@ const sC = document.getElementById("strictCheck");
 const muteToggleBtn =  document.getElementById("soundOnOff");
 const sOn = document.getElementById("soundOn");
 const sOff = document.getElementById("soundOff");
-const turnCount = document.getElementById("counterWindow")
+const turnCount = document.getElementById("counterWindow");
+const gameField1 = document.querySelector(".game-field-1");
+const gameField2 = document.querySelector(".game-field-2");
+const gameField3 = document.querySelector(".game-field-3");
+const gameField4 = document.querySelector(".game-field-4");
+const onToggleBtn = document.getElementById("powerOn");
+const onLight = document.getElementById("onOffIcon");
+const startButton = document.getElementById("playGame");
 
 strictToggleBtn.addEventListener("click", (event) => {
     if (strictButton == false) {
@@ -63,4 +70,17 @@ muteToggleBtn.addEventListener("click", (event) => {
         sOff.style.display = "none"
     }
 })
+
+onToggleBtn.addEventListener("click", (event) => {
+    if (power == false) {
+        power = true;
+        onLight.style.color = "#FFFFFF"
+    } else {
+        power = false;
+        onLight.style.color = "#232323"
+    }
+})
+
+
+
 
