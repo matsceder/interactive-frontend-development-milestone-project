@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
+@font-face {
+    font-family: 'silkscreennormal';
+    src: url('../fonts/slkscr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ------------- Color ------------- */
 
 body {
@@ -7,6 +14,7 @@ body {
     color: #FFDFD3;
     margin: 0;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -115,30 +123,33 @@ a {
 
 .counter-clock {
     width: 100%;
+    height: 36px;
     background-color: #FFDFD3;
     text-align: center;
     color: #232323;
     border: solid #232323 1px;
     border-radius: 4px;
-    padding: 3px 12px;
+    padding: 4px 12px;
 }
 
 .hash-div {
-    height: 25px;
+    height: 26px;
     background-color: #FFDFD3;
     display: inline-block;
-    transform: translateY(-3px);
+    transform: translateY(0px);
     color: #232323;
     font-weight: 500;
 }
 
 .counter-window {
-    height: 25px;
+    height: 26px;
     width: 40px;
     background-color: #232323;
     display: inline-block;
-    transform: translateY(3px);
-    color: #F47C7C;
+    transform: translateY(0px);
+    color: #232323;
+    font-family: 'silkscreennormal', Arial, sans-serif;
+    font-size: large;
 }
 
 .game-fields {

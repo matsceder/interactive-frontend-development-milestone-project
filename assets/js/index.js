@@ -76,10 +76,12 @@ onToggleBtn.addEventListener("click", (event) => {
         power = true;
         onLight.style.color = "#FFFFFF";
         turnCount.innerHTML = "-";
+        turnCount.style.color = "#F47C7C"
     } else {
         power = false;
         onLight.style.color = "#232323";
-        turnCount.innerHTML = "";
+        turnCount.innerHTML = "-";
+        turnCount.style.color = "#232323";  
         clearColor();
         clearInterval(intervalId);
     }
