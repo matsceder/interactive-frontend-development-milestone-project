@@ -143,13 +143,13 @@ a {
 
 .counter-window {
     height: 26px;
-    width: 40px;
+    width: 50px;
     background-color: #232323;
     display: inline-block;
     transform: translateY(0px);
     color: #232323;
     font-family: 'silkscreennormal', Arial, sans-serif;
-    font-size: large;
+    font-size: large;   
 }
 
 .game-fields {

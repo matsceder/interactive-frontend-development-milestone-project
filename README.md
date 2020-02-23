@@ -3,6 +3,10 @@ Simon Game
 
 
 
+colors
+
+http://colorschemedesigner.com/csd-3.5/
+https://www.schemecolor.com/pastel-color-tones.php
 
 sources for help
 
