@@ -31,6 +31,7 @@ let power = false;
 let win;
 let strictButton = false;
 let muteButton = false;
+let startOver;
 
 const strictToggleBtn = document.getElementById("strictMode");
 const sB = document.getElementById("strictBlank");
@@ -230,7 +231,7 @@ gameField4.addEventListener("click", (event) => {
 function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     score = false;
-    if (playerOrder.length == 20 && score) {
+    if (playerOrder.length == 2 && score) {
         winGame();
     }
     if (score == false) {
@@ -266,4 +267,7 @@ function winGame() {
     roundCount.innerHTML = "WIN!";
     power = false;
     win = true;
+    startOver = setTimeout(() => {
+        play();
+    }, 5000);
 }
