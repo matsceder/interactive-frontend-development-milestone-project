@@ -35,10 +35,10 @@ let muteButton = false;
 const strictToggleBtn = document.getElementById("strictMode");
 const sB = document.getElementById("strictBlank");
 const sC = document.getElementById("strictCheck");
-const muteToggleBtn =  document.getElementById("soundOnOff");
+const muteToggleBtn = document.getElementById("soundOnOff");
 const sOn = document.getElementById("soundOn");
 const sOff = document.getElementById("soundOff");
-const turnCount = document.getElementById("counterWindow");
+const turnCount = document.querySelector(".counter-window");
 const gameField1 = document.querySelector(".game-field-1");
 const gameField2 = document.querySelector(".game-field-2");
 const gameField3 = document.querySelector(".game-field-3");
@@ -57,29 +57,58 @@ strictToggleBtn.addEventListener("click", (event) => {
         sB.style.display = "inline-block"
         sC.style.display = "none"
     }
-})
+});
 
 muteToggleBtn.addEventListener("click", (event) => {
     if (muteButton == false) {
         muteButton = true;
         sOn.style.display = "none";  
-        sOff.style.display = "inline-block"
+        sOff.style.display = "inline-block";
     } else {
         muteButton = false;
-        sOn.style.display = "inline-block"
-        sOff.style.display = "none"
+        sOn.style.display = "inline-block";
+        sOff.style.display = "none";
     }
-})
+});
 
 onToggleBtn.addEventListener("click", (event) => {
     if (power == false) {
         power = true;
-        onLight.style.color = "#FFFFFF"
+        onLight.style.color = "#FFFFFF";
+        turnCount.innerHTML = "-";
     } else {
         power = false;
-        onLight.style.color = "#232323"
+        onLight.style.color = "#232323";
+        turnCount.innerHTML = "";
+        clearColor();
+        clearInterval(intervalId);
     }
-})
+});
+
+startButton.addEventListener("click", (event) => {
+    if (on || win) {
+        play();
+    }
+});
+
+function play() {
+    win = false;
+    order = [];
+    playerOrder = [];
+    flash = 0;
+    intervalId = 0;
+    round = 1;
+    turnCount.innerHTML = 1;
+    score = true;
+    for (var i = 0; i < 20; i++) {
+        order.push(Math.floor(Math.random() * 4) + 1);
+    }
+    compTurn = true;
+    intervalId = setInterval(gameTurn, 800);
+}
+
+
+
 
 
 
