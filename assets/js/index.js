@@ -231,7 +231,7 @@ gameField4.addEventListener("click", (event) => {
 function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     score = false;
-    if (playerOrder.length == 2 && score) {
+    if (playerOrder.length == 20 && score) {
         winGame();
     }
     if (score == false) {
