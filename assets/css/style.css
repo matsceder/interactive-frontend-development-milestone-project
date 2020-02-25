@@ -22,6 +22,9 @@ body {
 
 a {
     text-decoration: none;
+    cursor: default;
+    color: inherit;
+    font-size: inherit;
 }
 
 /* ------------- Game ------------- */
@@ -77,8 +80,7 @@ a {
 .controller-field {
     border-radius: 10px;
     position: relative;
-    width: 100%;
-/*    height: 25vh; */
+    width: 100%; 
     display: inline-block;
 }
 
@@ -256,15 +258,23 @@ a {
 
 /* ------------- Footer ------------- */
 
-.footer  {
+.footer {
     background-color: #3F3F3F;
     color: #FFDFD3;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    padding-top: 3px;
     text-align: center;
     height: 5vh;
+    font-size: 0.8em;
+    display: table;
+}
+
+.footer-text {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /* ------------- Hover ------------- */
@@ -290,4 +300,11 @@ a {
 .close-modal:hover,
 .close-modal:focus {
   cursor: default;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: default;
+    color: inherit;
+    font-size: inherit;
 }

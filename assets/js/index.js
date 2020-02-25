@@ -1,5 +1,4 @@
-
-
+ 
 /* ------------- Modal ------------- */
 /* ------------- Code structure from w3schools ------------- */ 
 let modal = document.getElementById("rulesModal");
@@ -19,6 +18,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
 /* ------------- Game ------------- */
 let order = [];
 let playerOrder = [];
@@ -177,7 +177,7 @@ function flashColor() {
 }
 
 gameField1.addEventListener("click", (event) => {
-    if (power = true) {
+    if (power) {
         playerOrder.push(1);
         check();
         one();
@@ -190,7 +190,7 @@ gameField1.addEventListener("click", (event) => {
 });
 
 gameField2.addEventListener("click", (event) => {
-    if (power = true) {
+    if (power) {
         playerOrder.push(2);
         check();
         two();
@@ -203,7 +203,7 @@ gameField2.addEventListener("click", (event) => {
 });
 
 gameField3.addEventListener("click", (event) => {
-    if (power = true) {
+    if (power) {
         playerOrder.push(3);
         check();
         three();
@@ -216,7 +216,7 @@ gameField3.addEventListener("click", (event) => {
 });
 
 gameField4.addEventListener("click", (event) => {
-    if (power = true) {
+    if (power) {
         playerOrder.push(4);
         check();
         four();
