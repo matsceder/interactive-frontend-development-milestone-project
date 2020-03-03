@@ -111,23 +111,23 @@ function play() {
 }
 
 function gameRound() {
-  power = false;
-  if (flash == round) {
-    clearInterval(intervalId);
-    compRound = false;
-    clearColor();
-    power = true;
-  }
-  if (compRound) {
-    clearColor();
-    setTimeout(() => {
-      if (order[flash] == 1) one();
-      if (order[flash] == 2) two();
-      if (order[flash] == 3) three();
-      if (order[flash] == 4) four();
-      flash++;
-    }, 200);
-  }
+    power = false;
+    if (flash == round) {
+        clearInterval(intervalId);
+        compRound = false;
+        clearColor();
+        power = true;
+    }
+    if (compRound) {
+        clearColor();
+        setTimeout(() => {
+            if (order[flash] == 1) one();
+            if (order[flash] == 2) two();
+            if (order[flash] == 3) three();
+            if (order[flash] == 4) four();
+            flash++;
+        }, 200);
+    }
 }
 
 function one() {
@@ -230,7 +230,7 @@ gameField4.addEventListener("click", (event) => {
 
 function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
-    score = false;
+        score = false;
     if (playerOrder.length == 20 && score) {
         winGame();
     }
@@ -240,7 +240,8 @@ function check() {
         setTimeout(() => {
             roundCount.innerHTML = round;
             clearColor();
-            if (strictButton = true) {
+
+            if (strictButton) {
                 play();
             } else {
                 compRound = true;
@@ -250,7 +251,8 @@ function check() {
                 intervalId = setInterval(gameRound, 800);
             }
         }, 800);
-        muteButton = false;
+        if (muteButton == false)
+            muteButton = false;
     }
     if (round == playerOrder.length && score && !win) {
         round++;
