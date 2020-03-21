@@ -2,14 +2,7 @@
 
  
 /* ------------- Test Modal Open Close ------------- */
-describe("Modal open close", () => {
-/*    describe("btnModal click to change css style", () => {
-        it("should have css display block", () => {
-            spyOnEvent($(btnModal), "click")
-            $(btnModal).click()
-            expect($("#rulesModal")).toHaveCss({"display": "block"})
-        })
-    })*/
+describe("Modal close after has been opened", () => {
     describe("btnModalClose click to change css style", () => {
         beforeEach(function() {
             $(btnModal).click()
