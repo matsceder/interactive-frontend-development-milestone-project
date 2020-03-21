@@ -22,21 +22,53 @@ describe("Modal open close", () => {
     })
 });
 
-/* ------------- Test On button ------------- */
+/* ------------- Test On Button ------------- */
 describe("OnOff button", () => {
     describe("Turning the game off", () => {
         
         beforeEach(function() {
+            power = false;
             $(onToggleBtn).click();
         })
 
-        it("Should call clearColor and clearInterval", () => {
+        it("Should call clearColor", () => {
             spyOn(window, "clearColor");
             $(onToggleBtn).click();
             expect(window.clearColor).toHaveBeenCalled()
         })
     })
-})
- 
+}) 
+
+/* ------------- Test Starting a New Round ------------- */
+describe("Test starting new round", () => {
+    describe("Pressing Play button", () => {
+        beforeEach(function() {
+            power = false;
+        })
+        it("Should not start if power false", () => {
+            spyOn(window, "play");
+            $(startButton).click();
+            expect(window.play).not.toHaveBeenCalled()
+        })
+        it("Should start when click play", () => {
+            spyOn(window, "play");
+            $(onToggleBtn).click(); 
+            $(startButton).click();
+            expect(window.play).toHaveBeenCalled()
+        })
+    })
+}) 
 
 
+
+/* ------------- Test Game Buttons Audio ------------- */
+/*describe("", () => {
+    describe("", () => {
+        it("", () => {
+
+        })
+    })
+}) 
+
+
+*/
