@@ -1,14 +1,32 @@
 
 
-describe("btnModal", () => {
-
-    it("change css of modal display", () => {
-		let evntKlickTest1 = btnModal["onclick"];
-        if (typeof(evntKlickTest1) == "function") {
-			evntKlickTest1.call(btnModal);
-        }
-    //    spyOn(btnModal);
-    //    expect(btnModal).toHaveBeenCalledWith(eventKlickTest1);
-        expect($("#rulesModal")).toHaveCss({"display": "block"});
-    });
+ 
+/* ------------- Test Modal Open Close ------------- */
+describe("Modal open close", () => {
+    describe("btnModal click", () => {
+        it("should have css display block", () => {
+            spyOnEvent($(btnModal), "click")
+            $(btnModal).click()
+            expect($("#rulesModal")).toHaveCss({"display": "block"})
+        })
+    })
+    describe("btnModalClose click", () => {
+        it("should have css display none", () => {
+            spyOnEvent($(btnModalClose), "click")
+            $(btnModalClose).click()
+            expect($("#rulesModal")).toHaveCss({"display": "none"})
+        })
+    })
 });
+
+/* ------------- Test  ------------- */
+/*describe("", () => {
+    describe("", () => {
+        it("", () {
+            expect().()
+        })
+    })
+})
+*/
+
+

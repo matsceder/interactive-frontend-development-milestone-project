@@ -5,19 +5,19 @@ let modal = document.getElementById("rulesModal");
 let btnModal = document.getElementById("rulesBtn");
 let btnModalClose = document.getElementById("modalBtnClose");
  
-btnModal.onclick = function() {
+btnModal.addEventListener("click", (event) => {
   modal.style.display = "block";
-}
+});
 
-btnModalClose.onclick = function() {
+btnModalClose.addEventListener("click", (event) => {
     modal.style.display = "none";
-}
+});
 
-window.onclick = function(event) {
+window.addEventListener("click", (event) => {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+});
 
 /* ------------- Game ------------- */
 let order = [];
