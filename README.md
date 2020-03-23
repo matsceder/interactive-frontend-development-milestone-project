@@ -149,11 +149,11 @@ These following steps were made to create and set up the repository:
 - In the repository at GitHub, go to settings and scroll down to GitHub Pages.
 - Choose the desired branch as your source(I used the master branch). 
 - Use the provided link for your index page. And here you can also provide a custom domain name.
-These stes were then followed to deploy the site:
+These steps were then followed to deploy the site:
 - Go to [GitHub Pages](https://pages.github.com/) and install GitHub Desktop(Instructions for deployment are also provided on this site)
 - Go to the repository and choose "Clone or download".
 - In GitHub Desktop, select your repository and push "Publish".
-- The project should now be online and ready to visit at "*username*.github.io.
+- The project should now be online and ready to visit at [*username*.github.io/*project-name*](https://matsceder.github.io/interactive-frontend-development-milestone-project/).
 
 From here on, changes that are made in the master branch will appear on the site as soon as they are pushed.
 Just update the browser after your work is pushed, sometimes it might take a little while for the changes to show.
