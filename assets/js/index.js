@@ -20,6 +20,12 @@ window.addEventListener("click", (event) => {
 });
 
 /* ------------- Game ------------- */
+/* ------------- Code Basic Structure from freeCodeCamp tutorial ------------- */
+
+/* Being my first project in JS, and with restricted basic knowledge I don't want to make to big 
+changes to the code. I also know not to reinvent the wheel, so in my opinion I've done enough 
+modifications to show my understanding of how the code works and put my own twist on it. */
+
 let order = [];
 let playerOrder = [];
 let flash;
