@@ -48,7 +48,7 @@ So there are no plans of additional features.
 - Jasmine Testing
 - Bootstrap Icons
 
-## Technologies used
+## Technologies and tools used
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
     - Used for the strucure of the page
@@ -72,8 +72,10 @@ So there are no plans of additional features.
     - Is where I found the fonts used in the page 
 - [Bootstrap](https://getbootstrap.com/)
     - Bootstrap is where I got the HTML and CSS frameworks
+- [Schemescolor](https://www.schemecolor.com/)
+    - Used for finding a nice colorscheme to start working from
 - [Color Scheme Designer 3](https://http://colorschemedesigner.com/csd-3.5/)
-    - Used for picking colors throughout the page
+    - Used for picking complementary colors
 - [Am I Responsive](http://ami.responsivedesign.is)
     - Testing of the site to make sure it's responsive
 - [The W3C Markup Validation Service](https://validator.w3.org/)
@@ -161,60 +163,28 @@ I've been running the code locally using GitPod Online and serving it through po
 ## Credits
 
 ### Content
-The information I've needed to complete this site, and code snippets used and modify has been from the following sites:
-- [Bootstrap](https://getbootstrap.com/)
-- [freeCodeCamp](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
-- [Alligator](https://alligator.io/css/cropping-images-object-fit/)
-- [CSSmatic](https://cssmatic.com/)
-- [W3School](https://www.w3schools.com/)
-- [stackoverflow](https://stackoverflow.com/)
+Credit where credit is due. These are my sources to get throgh this project.
+- [Bootstrap](https://getbootstrap.com/) - Used for icons and buttons
+- [freeCodeCamp](https://www.youtube.com/watch?v=n_ec3eowFLQ) - The video tutorial I followed to make the game
+- [freeCodeCamp](https://github.com/beaucarnes/simon-game) - The repository for the tutorial
+- [W3School](https://www.w3schools.com/howto/howto_css_modals.asp) - Helped me make my modal
+- [stackoverflow](https://stackoverflow.com/) - Looking at different peoples solutions to problems similar to mine. Great source.
+- [Jasmine](https://jasmine.github.io/) - For understanding Jasmine I used their page, and also the following sources.
+    - [Tutorialspoint](https://www.tutorialspoint.com/jasminejs/jasminejs_spies.htm)
+    - [Stackoverflow](https://stackoverflow.com/questions/9510148/using-jasmine-to-spy-on-a-function-without-an-object) 
+    - [CodewithHugo](https://codewithhugo.com/jest-fn-spyon-stub-mock/#jest-not-tobecalled-not-tohavebeencalled-asserting-a-stub-spy-has-not-been-called)
+    - [Devhints](https://devhints.io/jasmine) 
+    - [TravelTimN](https://github.com/TravelTimN/ci-ifd-lead/blob/master/week5-jasmine/jasmine.md#further-resources--additional-reading) 
+    - [Dylan Israel](https://www.youtube.com/watch?v=h2eWfvcAOTI) 
+    - [Daveceddia](https://daveceddia.com/jasmine-2-spy-cheat-sheet/) 
+    - [Scriptverse](https://scriptverse.academy/tutorials/jasmine-createspy-createspyobj.html) 
 
 ### Media
-Images for the page borrowed from:
-- [Ulla Ceder](https://www.instagram.com/ullabrittceder_/?hl=sv)
-- [Aftonbladet](https://www.aftonbladet.se/resa/a/Kv40bo/har-ar-sveriges-basta-julmarknader)
-- [Kryssning Polen](https://kryssningpolen.se/julmarknad-i-gdansk-2019/)
-
+- [Fontsquirrel](https://www.fontsquirrel.com/fonts/Silkscreen?filter%5Bclassifications%5D%5B0%5D=pixel&sort=hot) - Font used in the project
+ 
 ### Acknowledgements
 For inspiration and help to make this page I'd like to thank the following:
 - Seun Owonikoko @seun_mentor
-- Code Institute
-- Mark McGann
-- Ulla Ceder
-
-
-
-
-
-
-
-colors
-
-http://colorschemedesigner.com/csd-3.5/
-https://www.schemecolor.com/pastel-color-tones.php
-
-sources for help
-
-video tutorial
-freeCodeCamp.org / https://www.youtube.com/watch?v=n_ec3eowFLQ
-https://github.com/beaucarnes/simon-game
-
-modal
-https://www.w3schools.com/howto/howto_css_modals.asp
-
-
-font 
-https://www.fontsquirrel.com/fonts/Silkscreen?filter%5Bclassifications%5D%5B0%5D=pixel&sort=hot
-
-
-Jasmine
-https://jasmine.github.io/
-https://www.tutorialspoint.com/jasminejs/jasminejs_spies.htm
-https://stackoverflow.com/questions/9510148/using-jasmine-to-spy-on-a-function-without-an-object
-https://codewithhugo.com/jest-fn-spyon-stub-mock/#jest-not-tobecalled-not-tohavebeencalled-asserting-a-stub-spy-has-not-been-called
-https://devhints.io/jasmine
-https://github.com/TravelTimN/ci-ifd-lead/blob/master/week5-jasmine/jasmine.md#further-resources--additional-reading
-Dylan Israel https://www.youtube.com/watch?v=h2eWfvcAOTI
-https://daveceddia.com/jasmine-2-spy-cheat-sheet/
-https://scriptverse.academy/tutorials/jasmine-createspy-createspyobj.html
-
+- Code Institute and the Tutor support team
+ 
+ 
