@@ -158,6 +158,7 @@ All my testing was done locally and was made to see that my JS was working as in
     - Testing that the modal open and closes
     - Testing that the buttons call correct functions
     - Testing that the game audio plays as it should
+
 ![Display of executed jasmine test](documentation/ifedmp-jasmine-test.png)
 
 ## Deployment
