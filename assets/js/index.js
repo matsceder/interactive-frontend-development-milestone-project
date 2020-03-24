@@ -147,7 +147,7 @@ function one() {
         let audio = document.getElementById("clip1");
         audio.play();
     }
-    gameField1.style.backgroundColor = "#EFDAF2";
+    gameField1.style.backgroundColor = "#FBCBCB";
 }
 
 function two() {
@@ -155,7 +155,7 @@ function two() {
         let audio = document.getElementById("clip2");
         audio.play();
     }
-    gameField2.style.backgroundColor = "#C6B5D6";
+    gameField2.style.backgroundColor = "#FCFBD1";
 }
 
 function three() {
@@ -163,7 +163,7 @@ function three() {
         let audio = document.getElementById("clip3");
         audio.play();
     }
-    gameField3.style.backgroundColor = "#E9C1DB";
+    gameField3.style.backgroundColor = "#D9F2D4";
 }
 
 function four() {
@@ -171,23 +171,23 @@ function four() {
         let audio = document.getElementById("clip4");
         audio.play();
     }
-    gameField4.style.backgroundColor = "#FFE1EA";
+    gameField4.style.backgroundColor = "#C6D9EF";
 }
 
 /* ------------- Clears all color to "normal" ------------- */
 function clearColor() {
-    gameField1.style.backgroundColor = "#E0BBE4";
-    gameField2.style.backgroundColor = "#957DAD";
-    gameField3.style.backgroundColor = "#D291BC";
-    gameField4.style.backgroundColor = "#FEC8D8";
+    gameField1.style.backgroundColor = "#F47C7C";
+    gameField2.style.backgroundColor = "#F7F48B";
+    gameField3.style.backgroundColor = "#A1DE93";
+    gameField4.style.backgroundColor = "#70A1D7";
 }
 
 /* ------------- Flashes all colors ------------- */
 function flashColor() {
-    gameField1.style.backgroundColor = "#EFDAF2";
-    gameField2.style.backgroundColor = "#C6B5D6";
-    gameField3.style.backgroundColor = "#E9C1DB";
-    gameField4.style.backgroundColor = "#FFE1EA";
+    gameField1.style.backgroundColor = "#FBCBCB";
+    gameField2.style.backgroundColor = "#FCFBD1";
+    gameField3.style.backgroundColor = "#D9F2D4";
+    gameField4.style.backgroundColor = "#C6D9EF";
 }
 
 /* ------------- Here are the buttons. Calls functions for audio and flashing colors ------------- */

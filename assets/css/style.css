@@ -11,7 +11,7 @@
 
 body {
     background-color: #232323;
-    color: #FFDFD3;
+    color: #D9CEEC;
     margin: 0;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -42,7 +42,7 @@ a {
 }
 
 .outer-container {
-    border: solid #FFDFD3 2px;
+    border: solid #D9CEEC 2px;
     border-radius: 10px;
     padding: 5px;
 
@@ -53,7 +53,7 @@ a {
 
 @media (min-width: 576px) {
     .outer-container {
-        border: solid #FFDFD3 2px;
+        border: solid #D9CEEC 2px;
         border-radius: 10px;
         padding: 5px;
 
@@ -66,7 +66,7 @@ a {
 
 @media (min-width: 768px) {
     .outer-container {
-        border: solid #FFDFD3 2px;
+        border: solid #D9CEEC 2px;
         border-radius: 10px;
         padding: 5px;
 
@@ -85,7 +85,7 @@ a {
 }
 
 .rules-btn > .btn {
-    background-color: #FFDFD3;
+    background-color: #D9CEEC;
     color: #232323;
     font-weight: 500;
     padding: 5px 12px;
@@ -99,7 +99,7 @@ a {
 }
 
 .btn {
-    background-color: #FFDFD3;
+    background-color: #D9CEEC;
     color: #232323;
     font-weight: 500;
     padding: 5px 12px;
@@ -126,7 +126,7 @@ a {
 .counter-clock {
     width: 100%;
     height: 36px;
-    background-color: #FFDFD3;
+    background-color: #D9CEEC;
     text-align: center;
     color: #232323;
     border: solid #232323 1px;
@@ -136,7 +136,7 @@ a {
 
 .hash-div {
     height: 26px;
-    background-color: #FFDFD3;
+    background-color: #D9CEEC;
     display: inline-block;
     transform: translateY(0px);
     color: #232323;
@@ -160,7 +160,7 @@ a {
 }
 
 .game-field-1 {
-    background-color: #E0BBE4;
+    background-color: #F47C7C;
     width: 24%;
     display: inline-block;
     height: 45vh;
@@ -173,7 +173,7 @@ a {
 }
 
 .game-field-2 {
-    background-color: #957DAD;
+    background-color: #F7F48B;
     width: 24%;
     display: inline-block;
     height: 45vh;
@@ -186,7 +186,7 @@ a {
 }
 
 .game-field-3 {
-    background-color: #D291BC;
+    background-color: #A1DE93;
     width: 24%;
     display: inline-block;
     height: 45vh;
@@ -199,7 +199,7 @@ a {
 }
 
 .game-field-4 {
-    background-color: #FEC8D8;
+    background-color: #70A1D7;
     width: 24%;
     display: inline-block;
     height: 45vh;
@@ -242,7 +242,7 @@ a {
 }
 
 .rules {
-    color: #FFDFD3;
+    color: #D9CEEC;
     font-family: 'Roboto', sans-serif;
     margin: auto;
     text-align: justify;
@@ -251,7 +251,7 @@ a {
 }
 
 .close-modal {
-    color: #FFDFD3;
+    color: #D9CEEC;
     margin: auto;
     font-size: 2em;
 }
@@ -260,7 +260,7 @@ a {
 
 .footer {
     background-color: #3F3F3F;
-    color: #FFDFD3;
+    color: #D9CEEC;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -280,7 +280,7 @@ a {
 /* ------------- Hover ------------- */
 
 .rules-btn > .btn:hover {
-    background-color: #BFADA7;
+    background-color: #ECE5F9;
     color: #232323;
     font-weight: 500;
     padding: 5px 12px;
@@ -288,7 +288,7 @@ a {
 }
 
 .btn:hover {
-    background-color: #BFADA7;
+    background-color: #ECE5F9;
     color: #232323;
     font-weight: 500;
     padding: 5px 12px;
