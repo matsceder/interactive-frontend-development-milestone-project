@@ -26,6 +26,7 @@ window.addEventListener("click", (event) => {
 changes to the code. I also know not to reinvent the wheel, so in my opinion I've done enough 
 modifications to show my understanding of how the code works and put my own twist on it. */
 
+/* ------------- Variables ------------- */
 let order = [];
 let playerOrder = [];
 let flash;
@@ -39,6 +40,7 @@ let strictButton = false;
 let muteButton = false;
 let startOver;
 
+/* ------------- Constants ------------- */
 const strictToggleBtn = document.getElementById("strictMode");
 const sB = document.getElementById("strictBlank");
 const sC = document.getElementById("strictCheck");
@@ -54,6 +56,7 @@ const onToggleBtn = document.getElementById("powerOn");
 const onLight = document.getElementById("onOffIcon");
 const startButton = document.getElementById("playGame");
 
+/* ------------- Buttons for game functions ------------- */
 strictToggleBtn.addEventListener("click", (event) => {
     if (strictButton == false) {
         strictButton = true;
@@ -100,6 +103,7 @@ startButton.addEventListener("click", (event) => {
     }
 });
 
+/* ------------- Play function - Starting point of the game ------------- */
 function play() {
     win = false;
     order = [];
@@ -116,6 +120,7 @@ function play() {
     intervalId = setInterval(gameRound, 800);
 }
 
+/* ------------- Determines if it's the player or computers turn ------------- */
 function gameRound() {
     power = false;
     if (flash == round) {
@@ -136,6 +141,7 @@ function gameRound() {
     }
 }
 
+/* ------------- A functions for each of the colored play buttons. Plays correct audio and flash color ------------- */
 function one() {
     if (muteButton == false) {
         let audio = document.getElementById("clip1");
@@ -168,6 +174,7 @@ function four() {
     gameField4.style.backgroundColor = "#FFE1EA";
 }
 
+/* ------------- Clears all color to "normal" ------------- */
 function clearColor() {
     gameField1.style.backgroundColor = "#E0BBE4";
     gameField2.style.backgroundColor = "#957DAD";
@@ -175,6 +182,7 @@ function clearColor() {
     gameField4.style.backgroundColor = "#FEC8D8";
 }
 
+/* ------------- Flashes all colors ------------- */
 function flashColor() {
     gameField1.style.backgroundColor = "#EFDAF2";
     gameField2.style.backgroundColor = "#C6B5D6";
@@ -182,6 +190,7 @@ function flashColor() {
     gameField4.style.backgroundColor = "#FFE1EA";
 }
 
+/* ------------- Here are the buttons. Calls functions for audio and flashing colors ------------- */
 gameField1.addEventListener("click", (event) => {
     if (power) {
         playerOrder.push(1);
@@ -234,6 +243,7 @@ gameField4.addEventListener("click", (event) => {
     }
 });
 
+/* ------------- Checking to see if wrong or right answear, and if the game is won ------------- */
 function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
         score = false;
@@ -270,6 +280,7 @@ function check() {
     }
 }
 
+/* ------------- Win function. Congratulates you and on timeout starts game over ------------- */
 function winGame() {
     flashColor();
     roundCount.innerHTML = "WIN!";
