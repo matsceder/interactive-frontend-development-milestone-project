@@ -1,7 +1,13 @@
 # Simon Memory Game
 Interactive Frontend development milestone project
 
-This is my second milestone project with Code Institute. Here I've made a Simon Memory Game to show that 
+Simon Game, is a fun game for both kids and adults to challange their memory. The idea is to use combine sences
+and memorize the order a randomized pattern. Some people might think of it in terms of colors, for others it might
+be the different sounds. Or some people might just think of it as a series of numbers. No matter how you look at
+it, I'm thinking that the strongest players probably uses more than one way of thinking. And if someone is interested
+in learnign how to make their own Simon game, there is a link provided in the footer of the page. Have fun!
+
+This is my second milestone project with Code Institute. The purpose of this page is to show that 
 I've learned the basics, and hopefully a bit more, of Javascript, jQuery, testing with Jasmine and making 
 it into an interactive front end page. Of course I also get to repeat and practise my HTML and 
 CSS skils a bit more too.
@@ -134,11 +140,25 @@ Using Chrome browser and Dev Tools, checking booth responsiveness, navigation an
 ### Third Test - Javascript behaviour using Jasmine
 As mentioned earlier. My knowledge of both Javascript and Jasmine was nowhere near what's needed for test-driven 
 development when I started this project. Therefor it got pushed back to be one of the last steps of my process.
+All my testing was done locally and was made to see that my JS was working as intended.
+- Here's how I set up and ran the tests locally.
+    - Google Jasmine CDN, first result to come up should be cdnjs.com.
+    - Copy and paste the following script and link tags to the head of the html-file you want to run tests on.
+        - jasmine.js - script
+        - jasmine-html.js - script
+        - boot.js - script
+        - jasmine.css - link
+    - Further down on the page, make a script tag to run your JS. 
+    - Below that, make another script tag for your test file, the name should end with Spec.js
+    - Now as soon as you write your tests and run them locally, they should be displayed in your preview window or browser
+    - On [Jasmine](https://jasmine.github.io/)s webpage you can see examples of how tests are constructed
+- To access my deployed version with the test, just change the end of the url from /index.html to [/jasmine-test.html](https://matsceder.github.io/interactive-frontend-development-milestone-project/jasmine-test.html)
 - Here are the different things I've tested in the code.
     - Testing so button clicks changes CSS
     - Testing that the modal open and closes
     - Testing that the buttons call correct functions
     - Testing that the game audio plays as it should
+![Display of executed jasmine test](documentation/ifedmp-jasmine-test.png)
 
 ## Deployment
 
