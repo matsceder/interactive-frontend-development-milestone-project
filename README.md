@@ -207,5 +207,4 @@ Credit where credit is due. These are my sources to get throgh this project.
 For inspiration and help to make this page I'd like to thank the following:
 - Seun Owonikoko @seun_mentor
 - Code Institute and the Tutor support team
- 
- 
+  
