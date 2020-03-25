@@ -289,4 +289,6 @@ function winGame() {
     startOver = setTimeout(() => {
         play();
     }, 5000);
-}
+} 
+
+ 
